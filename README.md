@@ -1,5 +1,6 @@
 # my-studies-appium
 ## 1 - React-Native
+https://appium.io/docs/en/about-appium/getting-started/?lang=en#starting-appium
 ### 1.1 - Installing Appium
 `npm install -g appium`
 ### 1.2 - Installing Webdriverio
