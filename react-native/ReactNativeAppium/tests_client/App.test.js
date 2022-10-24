@@ -28,7 +28,7 @@ describe('App', () => {
     await client.$('~app-root').waitForDisplayed(20000, false);
     const initialValue = Number(await client.$('~number-text').getText());
     await client.$('~add-button').click();
-    await client.$('~app-root').waitForDisplayed(20000, false);
+    await client.$('~app-root').waitForDisplayed(50000, false);
     const newValue = Number(await client.$('~number-text').getText());
     assert.notEqual(newValue, initialValue);
     await client.deleteSession();
