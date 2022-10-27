@@ -12,6 +12,7 @@ import {
   SafeAreaView,
   ScrollView,
   StatusBar,
+  StyleSheet,
   Text,
   useColorScheme,
   View,
@@ -60,7 +61,10 @@ const App = () => {
             testID="sub-button"
             accessibilityLabel="sub-button"
           />
-          <Text testID="number-text" accessibilityLabel="number-text">
+          <Text
+            testID="number-text"
+            accessibilityLabel="number-text"
+            style={styles.text}>
             {number}
           </Text>
         </View>
@@ -68,5 +72,13 @@ const App = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+});
 
 export default App;
